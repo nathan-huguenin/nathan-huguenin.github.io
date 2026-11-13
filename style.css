@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif; /* Default font */
+    background-color: #F5F5F5; /* Subtle off-white background */
+    min-width: 520px; /* Ensure readability on narrow screens */
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    margin: 1% 4%; /* Align content to the left with some spacing */
+    text-align: left; /* Align text to the left */
+    position: relative; /* Needed for absolute positioning of the nav bar */
+    padding-bottom: 50px; /* Extra space for the navigation bar */
+}
+
+#logo h1 {
+    color: #000000; /* Black for the name */
+    font-size: 2.5em; /* Large font for the name */
+    margin: 0; /* Remove extra margins */
+}
+
+#logo h2 {
+    color: #333333; /* Slightly lighter black for subtitle */
+    font-size: 1em; /* Subtitle font size */
+    margin: 0; /* Remove extra margins */
+}
+
+/* Navigation menu */
+#logo ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0px 0 0 0; /* Add some spacing above the menu */
+    display: flex; /* Display items inline */
+    gap: 15px; /* Add spacing between items */
+}
+
+#logo ul li {
+    display: inline; /* Keep list items in a row */
+}
+
+#logo ul li a {
+    display: inline-block;
+    padding: 8px 16px; /* Padding for a button-like effect */
+    background-color: #000000; /* Black background */
+    color: white; /* White text for contrast */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth effects */
+}
+
+#logo ul li a:hover {
+    background-color: #333333; /* Dark gray on hover */
+}
+
+#contenu {
+    text-align: left;
+    background-color: #FFF; /* White background for the content */
+    color: #22303D; /* Dark gray for readability */
+    padding: 5% 8%; /* Padding for better readability */
+    clear: both; /* Reset floats */
+    border-top: 2px solid #DBE3EB;
+    border-bottom: 2px solid #DBE3EB;
+}
+#contenu ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: blue; /* Black for consistency */
+    transition: color 0.3s ease, font-weight 0.3s ease; /* Smooth hover effect */
+}
+
+p {
+    text-align: justify; /* Justify text for better alignment */
+}
+
+#contact {
+    float: right;
+    margin-left: 5%; /* Symmetric spacing */
+}
+
+#gauche {
+    margin-right: 5%; /* Symmetric spacing */
+}
+
+ul {
+    list-style-type: none; /* Remove bullets from lists */
+    padding: 0;
+    margin-top: 10px; /* Add spacing above lists */
+}
+
+ul li {
+    margin-bottom: 0px; /* Add spacing between list items */
+}
+/* Navigation Bar */
+.navbar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%; /* Full-width bar */
+	background-color: #000000; /* Black background */
+	text-align: center; /* Center the links */
+	padding: 0px 0; /* Add some padding for better spacing */
+}
+
+.navbar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: left; 
+	gap: 20px; /* Spacing between tabs */
+}
+
+.navbar ul li {
+	display: inline;
+}
+
+.navbar ul li a {
+	display: inline-block;
+	color: white; /* White text for contrast */
+	font-weight: bold;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar ul li a:hover {
+	background-color: #333333; /* Dark gray on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #logo {
+        display: flex;
+        flex-direction: column; /* Stack the name and subtitle vertically */
+        align-items: center; /* Center the items horizontally */
+        margin: 2% auto; /* Center the entire logo section */
+        text-align: center; /* Center text */
+    }
+
+    #logo h1 {
+        font-size: 1.8em; /* Reduce font size for the name */
+    }
+
+    #logo h2 {
+        font-size: 1.2em; /* Reduce font size for the subtitle */
+    }
+
+    /* Center the navigation menu on smaller screens */
+    #logo ul {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Reduce spacing */
+    }
+
+    #logo ul li a {
+        display: block; /* Full-width buttons */
+        text-align: center;
+        width: 100%;
+    }
+
+    #contact, #gauche {
+        float: none; /* Remove floating for better stacking */
+        margin: 0 auto; /* Center content */
+        text-align: center; /* Align text */
+    }
+
+    #contenu {
+        padding: 5%; /* Adjust padding for smaller screens */
+    }
+}
